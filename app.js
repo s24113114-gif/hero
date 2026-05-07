@@ -20,7 +20,7 @@ app.get('/hero', (req, res) => {
     res.render('hero', {
         title: '三國英雄榜',
         studentId: '24113114 ',
-        heroes: heroes
+        heroes: heroes 
     });
 });
 
