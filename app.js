@@ -16,7 +16,6 @@ const heroes = [
     { name: '黃忠', detail: '老當益壯，百步穿楊' }
 ];
 
-
 app.get('/hero', (req, res) => {
     res.render('hero', {
         title: '三國英雄榜',
@@ -24,7 +23,6 @@ app.get('/hero', (req, res) => {
         heroes: heroes
     });
 });
-
 
 app.listen(PORT, () => {
     console.log(`Server is running at http://localhost:${PORT}/hero`);
