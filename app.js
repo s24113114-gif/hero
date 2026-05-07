@@ -24,6 +24,10 @@ app.get('/hero', (req, res) => {
     });
 });
 
+app.get('/', (req, res) => {
+    res.redirect('/hero');
+});
+
 app.listen(PORT, () => {
     console.log(`Server is running at http://localhost:${PORT}/hero`);
 });
